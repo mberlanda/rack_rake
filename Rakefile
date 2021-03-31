@@ -7,7 +7,7 @@ require 'rack_rake'
 namespace :rackup do
   desc 'Start rack server from application'
   task :app do
-    Rack::Server.start(app: RackRake::App.new)
+    Rack::Server.start(app: RackRake::App.app)
   end
 
   desc 'Start rack server from config file'
